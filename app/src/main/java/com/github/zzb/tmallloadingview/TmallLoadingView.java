@@ -217,6 +217,7 @@ public class TmallLoadingView extends View {
         canvas.translate(mViewWidth / 2, mViewHeight / 2 - 2 * cellSize);
 
         mDstPath.reset();
+        //判断哪种缺口情况
         if (mPathLength * mAnimatorValue + distance <= mPathLength) {
             mMeasure.getSegment(0, mPathLength * mAnimatorValue, mDstPath, true);
             mMeasure.getSegment(mPathLength * mAnimatorValue + distance, mPathLength, mDstPath, true);
